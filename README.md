@@ -1,347 +1,173 @@
-# 📰 News App - تطبيق الأخبار
-
-
+# 📰 News App
 
 <p align="center">
-
-
-
+  <strong>A Complete Flutter News Application for Android & iOS</strong>
 </p>
-
-
 
 <p align="center">
-
-  <strong>تطبيق أخبار متكامل يعمل على Android و iOS</strong>
-
+  Browse news, search articles, manage your profile, and enjoy a modern responsive UI built with Flutter.
 </p>
-
-
 
 <p align="center">
-
-  <a href="#-المميزات">المميزات</a> •
-
-  <a href="#-التقنيات-المستخدمة">التقنيات</a> •
-
-  <a href="#-التثبيت">التثبيت</a> •
-
-  <a href="#-المساهمة">المساهمة</a>
-
+  <a href="#-features">Features</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-demo-video">Demo</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-project-structure">Project Structure</a>
 </p>
-
-
 
 ---
 
+## 📱 Features
 
-
-## 📱 المميزات
-
-
-
-- ✅ **تسجيل الدخول وإنشاء حساب** - نظام متكامل للمستخدمين
-
-- ✅ **عرض الأخبار** - تصفح الأخبار حسب الأقسام المختلفة
-
-- ✅ **البحث** - بحث متقدم مع مؤشر تحميل ونتائج فورية
-
-- ✅ **الوضع المظلم** - دعم كامل للوضع المظلم والفاتح
-
-- ✅ **عرض صفحة الويب** - فتح الروابط داخل التطبيق
-
-- ✅ **تغيير كلمة المرور** - تحديث كلمة المرور بسهولة
-
-- ✅ **تخصيص الملف الشخصي** - إضافة صورة شخصية
-
-
+✅ User Authentication (Login & Register)
+✅ Browse News by Categories
+✅ Real-Time Search
+✅ Dark & Light Theme Support
+✅ Read Full Articles with WebView
+✅ Profile Management
+✅ Local Data Persistence
+✅ Responsive UI for Different Screen Sizes
 
 ---
 
+## 🛠 Tech Stack
 
-
-## 🛠 التقنيات المستخدمة
-
-
-
-| التقنية | الاستخدام |
-
-|---------|-----------|
-
-| **Flutter** | إطار العمل الرئيسي |
-
-| **BLoC / Cubit** | إدارة الحالة (State Management) |
-
-| **SQLite** | قاعدة بيانات محلية للمستخدمين |
-
-| **Dio** | طلبات API |
-
-| **Shared Preferences** | تخزين الإعدادات المحلية |
-
-| **WebView** | عرض صفحات الويب |
-
-| **ScreenUtil** | تصميم متجاوب مع جميع الشاشات |
-
-
+| Technology         | Purpose                    |
+| ------------------ | -------------------------- |
+| Flutter            | Cross-platform development |
+| Dart               | Programming language       |
+| BLoC / Cubit       | State Management           |
+| Dio                | API Requests               |
+| SQLite             | Local Database             |
+| Shared Preferences | Local Storage              |
+| WebView            | Display Articles           |
+| ScreenUtil         | Responsive Design          |
 
 ---
 
-
-
-## 📦 المكتبات المستخدمة
-
-
+## 📦 Dependencies
 
 ```yaml
-
-dependencies:
-
-  flutter:
-
-    sdk: flutter
-
-
-
-  # State Management
-
-  flutter_bloc: ^8.1.3
-
-
-
-  # Networking
-
-  dio: ^5.3.3
-
-
-
-  # Local Storage
-
-  sqflite: ^2.3.0
-
-  shared_preferences: ^2.2.2
-
-
-
-  # UI
-
-  flutter_screenutil: ^5.9.0
-
-  conditional_builder_null_safety: ^1.0.8
-
-
-
-  # WebView
-
-  webview_flutter: ^4.4.2
-
-
-
-  # Image Picker
-
-  image_picker: ^1.0.4
-
+flutter_bloc: ^8.1.3
+dio: ^5.3.3
+sqflite: ^2.3.0
+shared_preferences: ^2.2.2
+flutter_screenutil: ^5.9.0
+conditional_builder_null_safety: ^1.0.8
+webview_flutter: ^4.4.2
+image_picker: ^1.0.4
 ```
-
-
 
 ---
 
+## 🎥 Demo Video
 
+Watch the application in action:
 
-## 🚀 التثبيت
+📺 [Demo Video](https://www.youtube.com/watch?v=eV6UE5Hy0wY)
 
+https://www.youtube.com/watch?v=eV6UE5Hy0wY
 
+---
+
+## 🚀 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/ygado/News_app.git
 
-# 1. Clone المشروع
+# Navigate to project folder
+cd News_app
 
-git clone https://github.com/ygado/news_app.git
-
-
-
-# 2. ادخل على فولدر المشروع
-
-cd news_app
-
-
-
-# 3. حمّل الـ dependencies
-
+# Install dependencies
 flutter pub get
 
-
-
-# 4. شغّل التطبيق
-
+# Run the application
 flutter run
-
 ```
-
-
 
 ---
 
+## 📂 Project Structure
 
-
-## 📁 هيكل المشروع
-
-
-
-```
-
+```text
 lib/
-
 ├── layout/
-
 │   ├── cubit/
-
-│   │   ├── news_cubit.dart
-
-│   │   └── news_states.dart
-
-│   └── news_layout.dart
-
+│   ├── news_layout.dart
+│
 ├── modules/
-
 │   ├── login_views/
-
-│   │   ├── cubit/
-
-│   │   │   ├── login_cubit.dart
-
-│   │   │   └── login_states.dart
-
-│   │   └── login_views.dart
-
 │   ├── register_views/
-
-│   │   └── register_views.dart
-
 │   ├── news_views/
-
-│   │   └── news_views.dart
-
 │   ├── search_views/
-
-│   │   └── search_views.dart
-
+│   ├── settings/
 │   └── web_view/
-
-│       └── web_view.dart
-
+│
 ├── shared/
-
 │   ├── components/
-
-│   │   └── components.dart
-
 │   ├── network/
-
 │   │   ├── local/
-
-│   │   │   └── shared_prefeence.dart
-
 │   │   └── remote/
-
-│   │       └── dio_helper.dart
-
 │   └── bloc_observer.dart
-
+│
 └── main.dart
-
 ```
 
+---
 
+## 🔑 API
+
+This application uses NewsAPI to fetch news articles.
+
+Endpoint:
+```text
+https://newsapi.org/v2/
+```
+
+> ⚠️ **Important:** Do not upload your API Key to GitHub. Create your own API key from [NewsAPI](https://newsapi.org/) and add it locally before running the application.
 
 ---
 
+## 🎯 Future Improvements
 
-
-## 🔑 API المستخدمة
-
-
-
-يستخدم التطبيق **[NewsAPI](https://newsapi.org/)** لجلب الأخبار.
-
-
-
-- **Endpoint:** `https://newsapi.org/v2/`
-
-- **المفاتيح المطلوبة:** `apiKey` — سجّل على [newsapi.org](https://newsapi.org/) واحصل على مفتاح مجاني
-
-
-
-> ⚠️ **تنبيه:** لا ترفع الـ API Key الخاص بك على GitHub. أضفه يدوياً بعد ما تعمل clone للمشروع.
-
-
+- [ ] Save Favorite Articles
+- [ ] Share Articles
+- [ ] Arabic & English Localization
 
 ---
 
+## 🤝 Contributing
 
+Contributions are welcome!
 
-## 🎯 الميزات القادمة
-
-
-
-- [ ] حفظ الأخبار المفضلة
-
-- [ ] مشاركة الأخبار عبر وسائل التواصل
-
-- [ ] دعم اللغتين العربية والإنجليزية
-
-
-
----
-
-
-
-## 🤝 المساهمة
-
-
-
-نرحب بمساهماتكم! اتبع الخطوات دي:
-
-
-
-1. **Fork** المشروع
-
-2. إنشاء فرع جديد (`git checkout -b feature/AmazingFeature`)
-
-3. **Commit** التغييرات (`git commit -m 'Add some AmazingFeature'`)
-
-4. **Push** إلى الفرع (`git push origin feature/AmazingFeature`)
-
-5. افتح **Pull Request**
-
-
+1. Fork the repository
+2. Create your feature branch
+```bash
+git checkout -b feature/AmazingFeature
+```
+3. Commit your changes
+```bash
+git commit -m "Add AmazingFeature"
+```
+4. Push your branch
+```bash
+git push origin feature/AmazingFeature
+```
+5. Open a Pull Request
 
 ---
 
+## 👨‍💻 Author
 
+**Youssef Gado**
 
-## 📄 الترخيص
-
-
-
-هذا المشروع مرخص تحت **MIT License**
-
-
+- GitHub: [ygado](https://github.com/ygado)
+- LinkedIn: [Youssef Gado](https://www.linkedin.com/in/youssef-gado-464a98234)
 
 ---
 
-
-
-## 📞 التواصل
-
-
-
-- **GitHub:** [@ygado](https://github.com/ygado)
-
-
-
----
-
-
-
-<p align="center">Made with ❤️ by <strong>YoussefGado</strong></p>
+<p align="center">
+Made with ❤️ using Flutter
+</p>
