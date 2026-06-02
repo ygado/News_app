@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # news_app
 
 A new Flutter project.
@@ -15,3 +16,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# News_app
+A full-featured Flutter news app for browsing, searching, and reading the latest news across multiple categories. Built with BLoC, SQLite, Dio, and NewsAPI.
+>>>>>>> 34450d1b1b6727bb6ef37100fdc2d970776da064
