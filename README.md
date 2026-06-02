@@ -168,6 +168,4 @@ git push origin feature/AmazingFeature
 
 ---
 
-<p align="center">
-Made with YoussefGado ❤️ using Flutter
-</p>
+> Built with ❤️ by [YoussefGado](https://github.com/ygado) using Flutter
