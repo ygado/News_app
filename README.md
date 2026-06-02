@@ -169,5 +169,5 @@ git push origin feature/AmazingFeature
 ---
 
 <p align="center">
-Made with ❤️ using Flutter by YoussefGado
+Made with YoussefGado ❤️ using Flutter
 </p>
