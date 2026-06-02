@@ -4,7 +4,7 @@
 
 <p align="center">
 
-  <img src="assets/images/logo.png" alt="News App Logo" width="200">
+
 
 </p>
 
